@@ -1,3 +1,4 @@
+import { KeyboardButtonComponent } from './keyboard-button/keyboard-button.component';
 import { Component } from '@angular/core';
 import { DisplayBoxComponent } from './display-box/display-box.component';
 
@@ -11,6 +12,7 @@ export class AppComponent {
   readonly NUM_ROW = 5
   title = 'Wordle Game';
   displays : DisplayBoxComponent[] = [];
+  keyboard_buttons: KeyboardButtonComponent[] = [];
 
   getTitle() {
     return this.title;
@@ -19,6 +21,7 @@ export class AppComponent {
   constructor() {
     for (var i: number = 0; i < this.NUM_COL * this.NUM_ROW; i++){
         this.displays[i] = new DisplayBoxComponent();
+        this.displays[i].value = 'X';
     }
   }
 }

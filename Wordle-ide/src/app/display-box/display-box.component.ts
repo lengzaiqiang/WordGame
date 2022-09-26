@@ -16,6 +16,7 @@ export class DisplayBoxComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.value = 'X';
   }
 
 }
