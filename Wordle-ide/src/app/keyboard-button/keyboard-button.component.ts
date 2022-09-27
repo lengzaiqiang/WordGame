@@ -1,4 +1,4 @@
-import { IKeyButton } from './keybutton';
+import { BackGroundColor, IKeyButton } from './keybutton';
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -32,7 +32,8 @@ export class KeyboardButtonComponent implements OnInit {
     this.keyButtonInfor = {
       value: '',
       column: 0,
-      row: 0
+      row: 0,
+      bkColor: BackGroundColor.Default,
     }
   }
 

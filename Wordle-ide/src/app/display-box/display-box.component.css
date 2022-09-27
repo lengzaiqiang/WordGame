@@ -1,0 +1,35 @@
+:host[data-mode='default'] {
+    height: 100%;
+    width: 100%;
+}
+
+:host[data-mode='letter-pos-correct'] {
+    height: 100%;
+    width: 100%;
+    background: green;
+    color: white;
+  }
+
+  :host[data-mode='letter-correct-only'] {
+    height: 100%;
+    width: 100%;
+    background: yellowgreen;
+    color: white;
+  }
+
+  :host[data-mode='not-correct'] {
+    height: 100%;
+    width: 100%;
+    background: #303030;
+    color: white;
+  }
+
+.display_box {
+    color: rgb(97, 40, 40);
+    font-size:xx-large;
+    font-weight: bolder;
+    user-select: none;
+    height: 100%; 
+    width: 100%; 
+    text-align: center;
+}

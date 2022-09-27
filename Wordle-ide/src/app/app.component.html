@@ -7,7 +7,9 @@
 <div class="center-letter-display" >
   <mat-grid-list [cols]="NUM_COL" rowHeight="80" gutterSize="10px">
     <mat-grid-tile *ngFor="let dispbox of displays">
-      <app-display-box></app-display-box>
+      <app-display-box 
+        [displayInfo] = dispbox
+      ></app-display-box>
     </mat-grid-tile>
   </mat-grid-list>  
 </div>
