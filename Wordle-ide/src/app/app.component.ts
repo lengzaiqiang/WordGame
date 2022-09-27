@@ -41,6 +41,13 @@ export class AppComponent {
     return this.keyboard_buttons.filter( kb => kb.row == row)
   }
 
+  /// Get called when Keyboard button is clicked.
+  OnClicked(info: IKeyButton)
+  {
+    console.log(`Button ${info.value} is clicked!`);
+
+  }
+
   private initKeyboard()
   {
     for (var j: number = 0; j < this.NUM_KEYS; j++)

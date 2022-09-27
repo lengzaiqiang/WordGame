@@ -19,7 +19,10 @@
 <div class="center" style="height:50px">
   <mat-grid-list [cols]="getKeyCountInRows(0)" rowHeight="4:2" gutterSize="10px">
     <mat-grid-tile *ngFor="let kb of getKeysInRow(0)">
-      <app-keyboard-button [keyButtonInfor] = kb>
+      <app-keyboard-button 
+        [keyButtonInfor] = kb
+        (clicked)="OnClicked($event)"
+      >
       </app-keyboard-button>
     </mat-grid-tile>
   </mat-grid-list>
@@ -28,7 +31,10 @@
 <div class="center" style="height:50px; width: 57%;">
   <mat-grid-list [cols]="getKeyCountInRows(1)" rowHeight="4:2" gutterSize="10px">
     <mat-grid-tile *ngFor="let kb of getKeysInRow(1)">
-      <app-keyboard-button [keyButtonInfor] = kb></app-keyboard-button>
+      <app-keyboard-button 
+        [keyButtonInfor] = kb
+        (clicked)="OnClicked($event)"
+      ></app-keyboard-button>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
@@ -36,7 +42,10 @@
 <div class="center" style="height:50px;">
   <mat-grid-list [cols]="getKeyCountInRows(2)" rowHeight="4:2" gutterSize="10px">
     <mat-grid-tile *ngFor="let kb of getKeysInRow(2)">
-      <app-keyboard-button [keyButtonInfor] = kb></app-keyboard-button>
+      <app-keyboard-button 
+        [keyButtonInfor] = kb
+        (clicked)="OnClicked($event)"
+      ></app-keyboard-button>
     </mat-grid-tile>
   </mat-grid-list>
 </div>

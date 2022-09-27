@@ -1,5 +1,5 @@
 import { IKeyButton } from './keybutton';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-keyboard-button',
@@ -10,6 +10,9 @@ export class KeyboardButtonComponent implements OnInit {
 
   @Input()
   keyButtonInfor: IKeyButton;
+
+  @Output()
+  clicked = new EventEmitter<IKeyButton>();
 
   public get value() 
   {
