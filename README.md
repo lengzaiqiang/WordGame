@@ -16,6 +16,9 @@ npm run build
 # Run the Application
 npm run start
 
+# Debug the Application
+Currently, the debug envrionment is set up in VsCode.  Choose profile "FrontEnd(4200) Debug" to do the debugging.
+
 # Run Unittests
 npm run test
 

@@ -17,44 +17,27 @@
 </div>
 
 <div class="center" style="height:50px">
-  <mat-grid-list [cols]="10" rowHeight="4:2" gutterSize="10px">
-    <mat-grid-tile>Q</mat-grid-tile>
-    <mat-grid-tile>W</mat-grid-tile>
-    <mat-grid-tile>E</mat-grid-tile>
-    <mat-grid-tile>R</mat-grid-tile>
-    <mat-grid-tile>T</mat-grid-tile>
-    <mat-grid-tile>Y</mat-grid-tile>
-    <mat-grid-tile>U</mat-grid-tile>
-    <mat-grid-tile>I</mat-grid-tile>
-    <mat-grid-tile>O</mat-grid-tile>
-    <mat-grid-tile>P</mat-grid-tile>
-  </mat-grid-list>  
+  <mat-grid-list [cols]="getKeyCountInRows(0)" rowHeight="4:2" gutterSize="10px">
+    <mat-grid-tile *ngFor="let kb of getKeysInRow(0)">
+      <app-keyboard-button [keyButtonInfor] = kb>
+      </app-keyboard-button>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>
 
 <div class="center" style="height:50px; width: 57%;">
-  <mat-grid-list [cols]="9" rowHeight="4:2" gutterSize="10px">
-    <mat-grid-tile>A</mat-grid-tile>
-    <mat-grid-tile>S</mat-grid-tile>
-    <mat-grid-tile>D</mat-grid-tile>
-    <mat-grid-tile>F</mat-grid-tile>
-    <mat-grid-tile>G</mat-grid-tile>
-    <mat-grid-tile>H</mat-grid-tile>
-    <mat-grid-tile>J</mat-grid-tile>
-    <mat-grid-tile>K</mat-grid-tile>
-    <mat-grid-tile>L</mat-grid-tile>
-  </mat-grid-list>  
+  <mat-grid-list [cols]="getKeyCountInRows(1)" rowHeight="4:2" gutterSize="10px">
+    <mat-grid-tile *ngFor="let kb of getKeysInRow(1)">
+      <app-keyboard-button [keyButtonInfor] = kb></app-keyboard-button>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>
 
-<div class="center" style="height:50px">
-  <mat-grid-list [cols]="11" rowHeight="4:2" gutterSize="10px">
-    <mat-grid-tile colspan="2">Enter</mat-grid-tile>
-    <mat-grid-tile>Z</mat-grid-tile>
-    <mat-grid-tile>X</mat-grid-tile>
-    <mat-grid-tile>C</mat-grid-tile>
-    <mat-grid-tile>V</mat-grid-tile>
-    <mat-grid-tile>B</mat-grid-tile>
-    <mat-grid-tile>N</mat-grid-tile>
-    <mat-grid-tile>M</mat-grid-tile>
-    <mat-grid-tile colspan="2">BKSpace</mat-grid-tile>
-  </mat-grid-list>  
+<div class="center" style="height:50px;">
+  <mat-grid-list [cols]="getKeyCountInRows(2)" rowHeight="4:2" gutterSize="10px">
+    <mat-grid-tile *ngFor="let kb of getKeysInRow(2)">
+      <app-keyboard-button [keyButtonInfor] = kb></app-keyboard-button>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>
+
