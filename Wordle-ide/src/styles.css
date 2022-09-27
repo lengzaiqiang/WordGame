@@ -13,12 +13,3 @@ mat-grid-tile {
     background: lavender;
     width: 100%;
 } 
-
-.center {
-    margin: auto;
-    width: 60%;
-    border: 5px solid #FFFF00;
-    text-align: center;
-    align-items: center;
-
-}

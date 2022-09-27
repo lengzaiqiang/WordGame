@@ -1,0 +1,23 @@
+
+.center-title {
+    margin: auto;
+    width: 60%;
+    border: 5px solid #FFFF00;
+    text-align: center;
+}
+
+.center-letter-display {
+    margin: auto;
+    width: 60%;
+    border: 5px solid #FFFF00;
+}
+
+.center-keyboard {
+    margin: auto;
+    width: 60%;
+}
+
+.center-keyboard2 {
+    margin: auto;
+    width: 57%;
+}

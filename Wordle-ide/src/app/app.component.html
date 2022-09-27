@@ -1,10 +1,10 @@
-<div class="center">
+<div class="center-title">
   <h1>
     {{getTitle()}}
 </h1>
 </div>
 
-<div class="center" >
+<div class="center-letter-display" >
   <mat-grid-list [cols]="NUM_COL" rowHeight="80" gutterSize="10px">
     <mat-grid-tile *ngFor="let dispbox of displays">
       <app-display-box></app-display-box>
@@ -12,11 +12,11 @@
   </mat-grid-list>  
 </div>
 
-<div class = "center" style="height: 100px;">
+<div class = "center-letter-display" style="height: 100px; border: 0ch;">
 
 </div>
 
-<div class="center" style="height:50px">
+<div class="center-keyboard" >
   <mat-grid-list [cols]="getKeyCountInRows(0)" rowHeight="4:2" gutterSize="10px">
     <mat-grid-tile *ngFor="let kb of getKeysInRow(0)">
       <app-keyboard-button 
@@ -28,10 +28,13 @@
   </mat-grid-list>
 </div>
 
-<div class="center" style="height:50px; width: 57%;">
+<div class = "center-letter-display" style="height: 10px; border:0ch">
+</div>
+
+<div class="center-keyboard2" >
   <mat-grid-list [cols]="getKeyCountInRows(1)" rowHeight="4:2" gutterSize="10px">
     <mat-grid-tile *ngFor="let kb of getKeysInRow(1)">
-      <app-keyboard-button 
+      <app-keyboard-button
         [keyButtonInfor] = kb
         (clicked)="OnClicked($event)"
       ></app-keyboard-button>
@@ -39,7 +42,10 @@
   </mat-grid-list>
 </div>
 
-<div class="center" style="height:50px;">
+<div class = "center-letter-display" style="height: 10px; border:0ch">
+</div>
+
+<div class="center-keyboard" >
   <mat-grid-list [cols]="getKeyCountInRows(2)" rowHeight="4:2" gutterSize="10px">
     <mat-grid-tile *ngFor="let kb of getKeysInRow(2)">
       <app-keyboard-button 
