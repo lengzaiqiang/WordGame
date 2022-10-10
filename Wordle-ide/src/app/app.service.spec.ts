@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DisplayBoxService } from './display-box.service';
+import { AppService } from './app.service';
 
 describe('DisplayBoxService', () => {
-  let service: DisplayBoxService;
+  let service: AppService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(DisplayBoxService);
+    service = TestBed.inject(AppService);
   });
 
   it('should be created', () => {

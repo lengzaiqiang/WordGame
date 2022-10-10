@@ -38,7 +38,6 @@ export class KeyboardButtonComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.keyButtonInfor);
   }
 
 }
