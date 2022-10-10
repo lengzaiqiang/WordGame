@@ -9,19 +9,19 @@ https://gist.githubusercontent.com/dracos/dd0668f281e685bad51479e5acaadb93/raw/c
 
 # front-end
 ## graphql client side
-install graphql client package.
-npm install --save apollo-boost graphql react
-npm i --save-dev @types/react
+install graphql client package.  
+npm install --save apollo-boost graphql react  
+npm i --save-dev @types/react  
 
 
 ## build
 
-cd Wordle-ide
-npm i
-npm run build
+cd Wordle-ide  
+npm i  
+npm run build  
 
 ## Run the Application
-npm run start
+npm run start  
 
 ## Debug the Application
 Currently, the debug envrionment is set up in VsCode.  Choose profile "FrontEnd(4200) Debug" to do the debugging.
@@ -32,34 +32,34 @@ npm run test
 # Back-end
 Back end is done with node express plus graphql.   It will have a database to hold the words.
 ## create the project
-npm init
-npm install graphql express express-graphql dotenv --save 
+npm init  
+npm install graphql express express-graphql dotenv --save   
 ### install typescript and nodeMon
-npm install typescript nodemon ts-node --save-dev
+npm install typescript nodemon ts-node --save-dev  
 ### install type-graphql thus we could reflect metadata.
-npm install --save class-validator type-graphql reflect-metadata
+npm install --save class-validator type-graphql reflect-metadata  
 
 ### initialize typescript settings
-tsc --init
+tsc --init  
 ### install type library
-npm install @types/node @types/express @types/express-graphql @types/dotenv @types/graphql --save-dev
+npm install @types/node @types/express @types/express-graphql @types/dotenv @types/graphql --save-dev  
 
 ### solve the cors problem
-npm install cores --save
-npm i --save-dev @types/cors
+npm install cores --save  
+npm i --save-dev @types/cors  
 
 ## build back-end
-cd wordle-svr
-npm i
-npm run build
+cd wordle-svr  
+npm i  
+npm run build  
 
 ## run back-end
-cd wordle-svr
-npm run start
+cd wordle-svr  
+npm run start  
 ## debug back-end
 The debug environment is set up in vscode, goto vscode debug tab, choose "Backend Debug" to debug the code.
 
-#TODOs
+# TODOs
 ## how to pass enumeration using graphql between server side and client side.
 ## how to auto generate types in client side?  Currently the _client.query() method supposed to be type-safe, but it is not now.
 ## add short-cut key to use keyboard input.
@@ -73,22 +73,17 @@ The debug environment is set up in vscode, goto vscode debug tab, choose "Backen
 # Other information
 ## Angular
 ### using angular material
-refer to angular commands section.
-It is not decided to use @angular/material/grid-list or 3rd party ag-grid component.
+refer to angular commands section.  
+It is not decided to use @angular/material/grid-list or 3rd party ag-grid component.  
 ### 3rd party component
 #### angural grid
-https://blog.ag-grid.com/get-started-with-angular-grid-in-5-minutes/ 
+https://blog.ag-grid.com/get-started-with-angular-grid-in-5-minutes/  
 ### Angular commands
 #### create a new angular component
-ng generate component <component_name> or
-ng g c <component_name>
+ng generate component <component_name> or  
+ng g c <component_name>  
 #### create a service 
-ng g service <service_name>
+ng g service <service_name>  
 
 #### using Angular material package.
-ng add @angular/material
-
-## html
-### html list
-"<ul> <li> /<li> <li> </li> /<ul>"
-"<ul> <li *ngFor='let course of Courses'> /<li>  /<ul>"
+ng add @angular/material  
