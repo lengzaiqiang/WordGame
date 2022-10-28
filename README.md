@@ -59,6 +59,7 @@ npm run start
 The debug environment is set up in vscode, goto vscode debug tab, choose "Backend Debug" to debug the code.
 
 # TODOs
+## make the server side session awareness.  Currently, it is a single user version.
 ## how to pass enumeration using graphql between server side and client side.
 ## how to auto generate types in client side?  Currently the _client.query() method supposed to be type-safe, but it is not now.
 ## add short-cut key to use keyboard input.
