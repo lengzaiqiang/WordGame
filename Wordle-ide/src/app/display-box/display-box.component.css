@@ -6,21 +6,21 @@
 :host[data-mode='letter-pos-correct'] {
     height: 100%;
     width: 100%;
-    background: green;
+    background: #70a964;
     color: white;
   }
 
   :host[data-mode='letter-correct-only'] {
     height: 100%;
     width: 100%;
-    background: yellowgreen;
+    background: #c4b45b;
     color: white;
   }
 
   :host[data-mode='not-correct'] {
     height: 100%;
     width: 100%;
-    background: #303030;
+    background: #787c7f;
     color: white;
   }
 
