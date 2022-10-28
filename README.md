@@ -8,14 +8,13 @@ https://www.nytimes.com/games/wordle/index.html
 https://gist.githubusercontent.com/dracos/dd0668f281e685bad51479e5acaadb93/raw/ca9018b32e963292473841fb55fd5a62176769b5/valid-wordle-words.txt
 
 # front-end
-## graphql client side
+## graphql client side (already included in package.json, you needn't do anything except "npm install")
 install graphql client package.  
 npm install --save apollo-boost graphql react  
 npm i --save-dev @types/react  
 
 
 ## build
-
 cd Wordle-ide  
 npm i  
 npm run build  
@@ -26,25 +25,25 @@ npm run start
 ## Debug the Application
 Currently, the debug envrionment is set up in VsCode.  Choose profile "FrontEnd(4200) Debug" to do the debugging.
 
-## Run Unittests
+## Run Unittests (No unittests written yet)
 npm run test
 
 # Back-end
 Back end is done with node express plus graphql.   It will have a database to hold the words.
-## create the project
+## create the project (FYI only)
 npm init  
 npm install graphql express express-graphql dotenv --save   
-### install typescript and nodeMon
+### install typescript and nodeMon (FYI only)
 npm install typescript nodemon ts-node --save-dev  
-### install type-graphql thus we could reflect metadata.
+### install type-graphql thus we could reflect metadata. (FYI only)
 npm install --save class-validator type-graphql reflect-metadata  
 
-### initialize typescript settings
+### initialize typescript settings (FYI only)
 tsc --init  
-### install type library
+### install type library (FYI only)
 npm install @types/node @types/express @types/express-graphql @types/dotenv @types/graphql --save-dev  
 
-### solve the cors problem
+### solve the cors problem (FYI only)
 npm install cores --save  
 npm i --save-dev @types/cors  
 
